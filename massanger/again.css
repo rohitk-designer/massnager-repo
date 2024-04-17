@@ -1,0 +1,441 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+}
+
+.container-fluid .header .row {
+    padding: 40px 80px;
+}
+.container-fluid .header {
+    position: sticky;
+    top:0px;
+    right:0px;
+    z-index:4;
+    background-color: rgba(246, 244, 244, 0.5);
+    
+}
+
+.container-fluid .header .row .logo .image {
+    width: 40px;
+    align-items: center;
+}
+
+
+.container-fluid .header .row .logo2 .nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.container-fluid .header .row .logo2 .nav li {
+    list-style: none;
+    margin-left: 25px;
+
+}
+
+.container-fluid .header .row .logo2 .nav li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.container-fluid .header .row .logo2 {
+    position: relative;
+}
+
+#checkbtn {
+    font-size: 30px;
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+.container-fluid .header .row .logo2 .nav li a{
+    position:relative; 
+ }
+ .container-fluid .header .row .logo2 .nav li a::after{
+     content:'';
+     height:4px;
+     background-color: #0a7cff;
+     width:90%;
+     position:absolute;
+     bottom:6px;
+     left:5px;
+     display:none;
+ }
+ .container-fluid .header .row .logo2 .nav li a:hover::after{
+    display:block;
+ }
+ 
+
+/********** section***/
+.container-fluid .section .row {
+    padding: 0px 80px;
+    margin-bottom: 50px;;
+}
+
+.section .row .first .first-section span {
+    margin: 10px;
+    padding: 5px 0px;
+    font-size: 4rem;
+    font-weight: 900;
+    background-image: linear-gradient(to right, rgb(23, 23, 185), rgb(234, 74, 234), rgb(227, 80, 80));
+    background-clip: text;
+    color: transparent;
+    line-height: 80px;
+    font-family: Helvetica, sans-serif;
+
+
+}
+
+.section .row .first .first-section p {
+    font-size: 19px;
+    color: rgb(88, 78, 78);
+    line-height: 40px;
+}
+
+input[type="text"] {
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 15px;
+    box-shadow: none;
+    border: none;
+    font-size: 17px;
+    background: rgba(0, 0, 0, .04);
+    box-sizing: border-box;
+}
+
+.section .row .first .first-section .login button {
+    width: 15%;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #0a7cff;
+    border-color: #0a7cff;
+    color: white;
+    line-height: 17px;
+    cursor: pointer;
+    margin: 20px 20px 20px 0px;
+    text-transform: capitalize;
+}
+
+.section .row .first-section .login button:hover {
+    background-color: rgb(79, 79, 151);
+}
+
+.section .row .first-section a {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #0a7cff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.section .row .first-section .check-box {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    position: relative;
+    top: 4px;}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+
+}
+
+.row .second .section-2 img {
+    width: 90%;
+}
+
+.row .first .first-section .image .second-img {
+    width: 119px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+
+/*********** footer ************/
+.container-fluid .footer .row {
+    padding: 0px 80px;
+    margin-top:100px;
+}
+.container-fluid .footer .row .footer-1 .box-1 p{
+font-size:13px;
+}
+
+.footer .row .footer-2 .box-2{
+    text-decoration:none;
+    color:black;
+    font-size:13px;
+}
+.footer .box-2 ul{
+    display:flex;
+}
+.footer .box-2 ul li{
+    text-decoration: none;
+    list-style:none;
+    margin:0px  10px;
+}
+.footer .box-2 ul img{
+    width:150px;
+    margin-top:-12px;
+    margin-left:-10px;
+}
+.footer .box-2 ul  .color{
+    color:rgb(185, 173, 173);
+}
+
+
+
+
+
+
+/******** media queries ------*/
+
+
+@media only screen and (max-width:480px) {
+    #checkbtn {
+        display: block;
+        margin-top: -30px;
+        margin-right: 20px;
+    }
+
+    .container-fluid .header .row .nav {
+        width: 95%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:white;
+        top: 0px;
+        left: 0%;
+        transition: 0.2s;
+        overflow: hidden;
+
+    }
+
+    .logo {
+        padding: 30px;
+    }
+
+    .container-fluid .header .row {
+        padding: 0px;
+
+    }
+
+    .container-fluid .header .row .logo2 .nav li {
+
+
+        width: 100%;
+        height: 100%;
+        text-align:left;
+        background-color: lightgray;
+        margin: 6px 0px;
+    
+
+
+    }
+
+    .container-fluid .header .row .logo2 .nav li a {
+        font-size: 30px;
+        line-height: 75px;
+        margin-left:1.4rem;
+
+
+
+    }
+
+    #check:checked~.nav {
+        left: -100%;
+    }
+    .section .row .first .first-section span{
+        font-size:3.2rem;
+        line-height:60px;
+        font-family:poppines;
+        padding-top:20px;
+    }
+    .row .second .section-2 img {
+        display: none;
+    }
+    .footer .box-2 ul{
+        display:none;
+    }
+    .container-fluid .footer .row .footer-1 .box-1 p{
+        display:none;
+    }
+    .section .row .first .first-section .login button{
+        display: none;;
+    }
+    .section .row .first-section .check-box{
+        display: none;
+    }
+    .section .row .first-section a {
+        display: none;
+    }
+    .row .first .first-section .image .second-img{
+        display:none;
+    }
+    .container-fluid .section .row {
+        padding: 0px 10px;
+        margin-bottom: 50px;;
+    }
+    input[type="text"]{
+        display:none;
+    }
+    .section .row .first .first-section p{
+        line-height:30px;
+        font-size:18px;
+        margin-top:20px;
+        padding-left:8px;
+    }
+    .row .first .first-section .image .block{
+        margin-top:-80px;
+        padding:0px;
+    }
+    .container-fluid .header {
+    position: sticky;
+    top:0px;
+    right:0px;
+    z-index:4;
+    background-color:white;
+    height:100px;
+    
+    
+}
+
+}
+
+
+/******************  media  600 px *****************/
+
+@media only screen and (max-width:600px){
+    #checkbtn {
+        display: block;
+        margin-top: -30px;
+        margin-right: 20px;
+    }
+
+    .container-fluid .header .row .nav {
+        width: 95%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:white;
+        top: 0px;
+        left: 0%;
+        transition: 0.2s;
+        overflow: hidden;
+
+    }
+
+    .logo {
+        padding: 30px;
+    }
+
+    .container-fluid .header .row {
+        padding: 0px;
+
+    }
+
+    .container-fluid .header .row .logo2 .nav li {
+
+
+        width: 100%;
+        height: 100%;
+        text-align:left;
+        background-color: lightgray;
+        margin: 6px 0px;
+    
+
+
+    }
+
+    .container-fluid .header .row .logo2 .nav li a {
+        font-size: 30px;
+        line-height: 75px;
+        margin-left:1.4rem;
+
+
+
+    }
+
+    #check:checked~.nav {
+        left: -100%;
+    }
+    .section .row .first .first-section span{
+        font-size:4rem;
+        line-height:60px;
+        font-family:poppines;
+        padding-top:20px;
+    }
+    .row .second .section-2 img {
+        display: none;
+    }
+    .footer .box-2 ul{
+        display:none;
+    }
+    .container-fluid .footer .row .footer-1 .box-1 p{
+        display:none;
+    }
+    .section .row .first .first-section .login button{
+        display: none;;
+    }
+    .section .row .first-section .check-box{
+        display: none;
+    }
+    .section .row .first-section a {
+        display: none;
+    }
+    .row .first .first-section .image .second-img{
+        display:none;
+    }
+    .container-fluid .section .row {
+        padding: 0px 10px;
+        margin-bottom: 50px;;
+    }
+    input[type="text"]{
+        display:none;
+    }
+    .section .row .first .first-section p{
+        line-height:30px;
+        font-size:18px;
+        margin-top:20px;
+        padding-left:8px;
+    }
+    .row .first .first-section .image .block{
+        margin-top:-80px;
+        padding:0px;
+    }
+    .container-fluid .header {
+    position: sticky;
+    top:0px;
+    right:0px;
+    z-index:4;
+    background-color:white;
+    height:100px;
+    }
+    
+}
+
